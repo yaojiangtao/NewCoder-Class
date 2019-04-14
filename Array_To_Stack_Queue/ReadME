@@ -1,0 +1,9 @@
+1.用数组实现栈
+步骤：1.定义size变量
+      2.push时size++
+      3.poll时--size
+
+2.用数组实现队列
+步骤：1.定义两个变量first,last初始化都为0
+      2.push时last++
+      3.poll时，返回first的值，然后first++
