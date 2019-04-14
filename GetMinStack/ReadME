@@ -1,0 +1,12 @@
+实现一个特殊的栈，在实现栈的基本功能的基础上，再实现返 回栈中最小元素的操作。
+【要求】 1．pop、push、getMin操作的时间复杂度都是O(1)。
+         2．设计的栈类型可以使用现成的栈结构。
+
+         1.思想：用两个栈，stackData和stackMin
+         2.push时如果一个数大于stackMin的栈顶元素，则进stackData,否则进stackMin
+         3.pop时如果这个数不等于stackMin的栈顶元素则返回，如果等于则stackMin pop
+
+
+
+         1.push时如果小于stackMin的栈顶元素，则将栈顶元素在加一次
+         2.pop时两个栈同时出
